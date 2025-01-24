@@ -1,0 +1,3 @@
+&bluetooth {
+    bt-name = "Kiron";
+};
