@@ -88,6 +88,21 @@
                         key-positions = <19 31>;
                         bindings = <&kp AMPS>;
                 };
+                combo_excl {
+                        timeout-ms = <50>;
+                        key-positions = <20 32>;
+                        bindings = <&kp EXCL>;
+                };
+                combo_lpar {
+                        timeout-ms = <50>;
+                        key-positions = <05 17>;
+                        bindings = <&kp LPAR>;
+                };
+                combo_rpar {
+                        timeout-ms = <50>;
+                        key-positions = <06 18>;
+                        bindings = <&kp RPAR>;
+                };
         };
         keymap {
                 compatible = "zmk,keymap";
