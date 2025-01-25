@@ -133,7 +133,7 @@
                         key-positions = <13 14>;
                         bindings = <&kp HASH>;
                 };
-        }
+        };
         keymap {
                 compatible = "zmk,keymap";
 
