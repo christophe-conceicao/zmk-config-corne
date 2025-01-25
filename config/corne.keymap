@@ -113,15 +113,15 @@
                         key-positions = <07 19>;
                         bindings = <&kp RBKT>;
                 };
-                combo_lbrc {
+                combo_at {
                         timeout-ms = <50>;
-                        key-positions = <03 15>;
-                        bindings = <&kp LBRC>;
+                        key-positions = <13 05>;
+                        bindings = <&kp AT>;
                 };
-                combo_rbrc {
+                combo_hash {
                         timeout-ms = <50>;
-                        key-positions = <08 20>;
-                        bindings = <&kp RBRC>;
+                        key-positions = <13 14>;
+                        bindings = <&kp HASH>;
                 };
         };
         keymap {
