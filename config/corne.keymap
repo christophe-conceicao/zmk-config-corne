@@ -22,11 +22,6 @@
                         key-positions = <19 30>;
                         bindings = <&kp FSLH>;
                 };
-                combo_grave {
-                        timeout-ms = <50>;
-                        key-positions = <07 18>;
-                        bindings = <&kp GRAVE>;
-                };
                 combo_caret {
                         timeout-ms = <50>;
                         key-positions = <18 07 20>;
@@ -45,7 +40,7 @@
                 combo_plus {
                         timeout-ms = <50>;
                         key-positions = <18 19 20>;
-                        bindings = <&kp MINUS>;
+                        bindings = <&kp PLUS>;
                 };
                 combo_under {
                         timeout-ms = <50>;
@@ -56,6 +51,11 @@
                         timeout-ms = <50>;
                         key-positions = <16 17>;
                         bindings = <&kp TILDE>;
+                };
+                combo_grave {
+                        timeout-ms = <50>;
+                        key-positions = <04 17>;
+                        bindings = <&kp GRAVE>;
                 };
                 combo_pipe {
                         timeout-ms = <50>;
