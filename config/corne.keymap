@@ -40,12 +40,12 @@
                 };
                 combo_caret {
                         timeout-ms = <50>;
-                        key-positions = <18 07 20>;
+                        key-positions = <18 7 20>;
                         bindings = <&kp CARET>;
                 };
                 combo_equal {
                         timeout-ms = <50>;
-                        key-positions = <06 07>;
+                        key-positions = <6 7>;
                         bindings = <&kp EQUAL>;
                 };
                 combo_minus {
@@ -75,7 +75,7 @@
                 };
                 combo_grave {
                         timeout-ms = <50>;
-                        key-positions = <04 17>;
+                        key-positions = <4 17>;
                         bindings = <&kp GRAVE>;
                 };
                 combo_pipe {
@@ -95,27 +95,27 @@
                 };
                 combo_lpar {
                         timeout-ms = <50>;
-                        key-positions = <05 17>;
+                        key-positions = <5 17>;
                         bindings = <&kp LPAR>;
                 };
                 combo_rpar {
                         timeout-ms = <50>;
-                        key-positions = <06 18>;
+                        key-positions = <6 18>;
                         bindings = <&kp RPAR>;
                 };
                 combo_lbkt {
                         timeout-ms = <50>;
-                        key-positions = <04 16>;
+                        key-positions = <4 16>;
                         bindings = <&kp LBKT>;
                 };
                 combo_rbkt {
                         timeout-ms = <50>;
-                        key-positions = <07 19>;
+                        key-positions = <7 19>;
                         bindings = <&kp RBKT>;
                 };
                 combo_lbrc {
                         timeout-ms = <50>;
-                        key-positions = <03 15>;
+                        key-positions = <3 15>;
                         bindings = <&kp LBRC>;
                 };
                 combo_rbrc {
@@ -125,7 +125,7 @@
                 };
                 combo_at {
                         timeout-ms = <50>;
-                        key-positions = <13 05>;
+                        key-positions = <13 5>;
                         bindings = <&kp AT>;
                 };
                 combo_hash {
