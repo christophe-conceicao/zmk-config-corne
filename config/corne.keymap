@@ -121,7 +121,7 @@
                 combo_wth {
                         timeout-ms = <50>;
                         key-positions = <08 22>;
-                        bindings = <&kp RBRC>;
+                        bindings = <&kp H>;
                 };
                 combo_at {
                         timeout-ms = <50>;
