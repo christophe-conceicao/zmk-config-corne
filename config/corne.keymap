@@ -9,6 +9,17 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
+/*
+ * Corne 6-columns (42 keys) Key Matrix
+ * ------------------------------------
+ *      ╭────────────────────────┬────────────────────────╮
+ *      │  0   1   2   3   4   5 │  6   7   8   9  10  11 │
+ *      │ 12  13  14  15  16  17 │ 18  19  20  21  22  23 │
+ *      │ 24  25  26  27  28  29 │ 30  31  32  33  34  35 │
+ *      ╰───────────╮ 36  37  38 │ 39  40  41 ╭───────────╯
+ *                  ╰────────────┴────────────╯
+ */
+
 / {
         combos {
                 compatible = "zmk,combos";
@@ -21,6 +32,11 @@
                         timeout-ms = <50>;
                         key-positions = <19 30>;
                         bindings = <&kp FSLH>;
+                };
+                combo_prcnt {
+                        timeout-ms = <50>;
+                        key-positions = <20 31>;
+                        bindings = <&kp PRCNT>;
                 };
                 combo_caret {
                         timeout-ms = <50>;
@@ -42,6 +58,11 @@
                         key-positions = <18 19 20>;
                         bindings = <&kp PLUS>;
                 };
+                combo_astrk {
+                        timeout-ms = <50>;
+                        key-positions = <30 31 32>;
+                        bindings = <&kp ASTRK>;
+                };
                 combo_under {
                         timeout-ms = <50>;
                         key-positions = <30 31>;
@@ -59,15 +80,60 @@
                 };
                 combo_pipe {
                         timeout-ms = <50>;
-                        key-positions = <06 18>;
+                        key-positions = <18 30>;
                         bindings = <&kp PIPE>;
                 };
                 combo_amps {
                         timeout-ms = <50>;
-                        key-positions = <07 19>;
+                        key-positions = <19 31>;
                         bindings = <&kp AMPS>;
                 };
-        };
+                combo_excl {
+                        timeout-ms = <50>;
+                        key-positions = <20 32>;
+                        bindings = <&kp EXCL>;
+                };
+                combo_lpar {
+                        timeout-ms = <50>;
+                        key-positions = <05 17>;
+                        bindings = <&kp LPAR>;
+                };
+                combo_rpar {
+                        timeout-ms = <50>;
+                        key-positions = <06 18>;
+                        bindings = <&kp RPAR>;
+                };
+                combo_lbkt {
+                        timeout-ms = <50>;
+                        key-positions = <04 16>;
+                        bindings = <&kp LBKT>;
+                };
+                combo_rbkt {
+                        timeout-ms = <50>;
+                        key-positions = <07 19>;
+                        bindings = <&kp RBKT>;
+                };
+                combo_lbrc {
+                        timeout-ms = <50>;
+                        key-positions = <03 15>;
+                        bindings = <&kp LBRC>;
+                };
+                combo_rbrc {
+                        timeout-ms = <50>;
+                        key-positions = <08 20>;
+                        bindings = <&kp RBRC>;
+                };
+                combo_at {
+                        timeout-ms = <50>;
+                        key-positions = <13 05>;
+                        bindings = <&kp AT>;
+                };
+                combo_hash {
+                        timeout-ms = <50>;
+                        key-positions = <13 14>;
+                        bindings = <&kp HASH>;
+                };
+        }
         keymap {
                 compatible = "zmk,keymap";
 
