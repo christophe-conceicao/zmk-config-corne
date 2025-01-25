@@ -113,6 +113,11 @@
                         key-positions = <07 19>;
                         bindings = <&kp RBKT>;
                 };
+                combo_lbrc {
+                        timeout-ms = <50>;
+                        key-positions = <03 15>;
+                        bindings = <&kp LBRC>;
+                };
                 combo_at {
                         timeout-ms = <50>;
                         key-positions = <13 05>;
