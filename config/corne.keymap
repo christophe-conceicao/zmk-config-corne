@@ -21,6 +21,23 @@
  */
 
 / {
+        behaviors {
+                td_s: behavior_tap_dance {
+                        compatible = "zmk,behavior-tap-dance";
+                        #binding-cells = <0>;
+                        tapping-term-ms = <300>;
+
+                        bindings = <&kp S>, <&kp LS(LG(4))>; // Area screenshot
+                };
+
+                td_t: behavior_tap_dance {
+                        compatible = "zmk,behavior-tap-dance";
+                        #binding-cells = <0>;
+                        tapping-term-ms = <300>;
+
+                        bindings = <&kp T>, <&kp LC(B)>; // Tmux mode
+                };
+        };
         combos {
                 compatible = "zmk,combos";
 
