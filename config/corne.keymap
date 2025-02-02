@@ -22,26 +22,20 @@
 
 / {
         behaviors {
-                td_lgui: tap_dance_s {
+                td_lgui: tap_dance_lgui {
                         compatible = "zmk,behavior-tap-dance";
                         #binding-cells = <0>;
                         tapping-term-ms = <200>;
 
-                        bindings = <&kp LGUI>, <&macro_screenshot>;
+                        bindings = <&kp LGUI>, <&kp LG(LS(N4))>;
                 };
 
-                td_lctrl: tap_dance_t {
+                td_lctrl: tap_dance_lctrl {
                         compatible = "zmk,behavior-tap-dance";
                         #binding-cells = <0>;
                         tapping-term-ms = <200>;
 
                         bindings = <&kp LCTRL>, <&kp LC(B)>; // Tmux mode
-                };
-
-                macro_screenshot: behavior_macro {
-                        compatible = "zmk,behavior-macro";
-                        #binding-cells = <0>;
-                        bindings = <&kp LSHIFT &kp LGUI &kp N4>;
                 };
         };
         combos {
