@@ -22,20 +22,20 @@
 
 / {
         behaviors {
-                td_s: tap_dance_s {
+                td_lgui: tap_dance_s {
                         compatible = "zmk,behavior-tap-dance";
                         #binding-cells = <0>;
-                        tapping-term-ms = <100>;
+                        tapping-term-ms = <200>;
 
-                        bindings = <&kp S>, <&macro_screenshot>;
+                        bindings = <&kp LGUI>, <&macro_screenshot>;
                 };
 
-                td_t: tap_dance_t {
+                td_lctrl: tap_dance_t {
                         compatible = "zmk,behavior-tap-dance";
                         #binding-cells = <0>;
-                        tapping-term-ms = <100>;
+                        tapping-term-ms = <200>;
 
-                        bindings = <&kp T>, <&kp LC(B)>; // Tmux mode
+                        bindings = <&kp LCTRL>, <&kp LC(B)>; // Tmux mode
                 };
 
                 macro_screenshot: behavior_macro {
@@ -148,10 +148,10 @@
 // | SHFT |  Z  |  X  |  C  |  V      |  B  |   |  N  |  M      |  ,  |  .  |  /  | ESC  |
 //                    | GUI | LWR     | SPC |   | ENT | RSE     | ALT |
                         bindings = <
-   &kp TAB   &kp Q &kp W &kp E &kp R &td_t   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-   &kp LCTRL &kp A &td_s &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+   &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
+   &td_lctrl &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &mt RSHIFT ESC
-                &kp LGUI &mo 1 &lt 3 SPACE    &kp RET &mo 2 &kp RALT
+                &td_lgui &mo 1 &lt 3 SPACE    &kp RET &mo 2 &kp RALT
                         >;
                 };
                 lower_layer {
