@@ -25,24 +25,30 @@
                 td_s: tap_dance_s {
                         compatible = "zmk,behavior-tap-dance";
                         #binding-cells = <0>;
-                        tapping-term-ms = <300>;
+                        tapping-term-ms = <100>;
 
-                        bindings = <&kp S>, <&kp LS(LG(4))>; // Area screenshot
+                        bindings = <&kp S>, <&macro_screenshot>;
                 };
 
                 td_t: tap_dance_t {
                         compatible = "zmk,behavior-tap-dance";
                         #binding-cells = <0>;
-                        tapping-term-ms = <300>;
+                        tapping-term-ms = <100>;
 
                         bindings = <&kp T>, <&kp LC(B)>; // Tmux mode
+                };
+
+                macro_screenshot: behavior_macro {
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        bindings = <&kp LSHIFT &kp LGUI &kp N4>;
                 };
         };
         combos {
                 compatible = "zmk,combos";
 
                 timeout-ms = <50>;
-                require-prior-idle-ms = <200>;
+                require-prior-idle-ms = <300>;
                 combo_bslh {
                         key-positions = <16 29>;
                         bindings = <&kp BSLH>;
